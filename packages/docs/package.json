@@ -1,0 +1,22 @@
+{
+  "name": "@monster/vue3-component/docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies":{
+    "@storybook/addon-essentials": "^7.6.11",
+    "@storybook/addon-interactions": "^7.6.11",
+    "@storybook/addon-links": "^7.6.11",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/blocks": "^7.6.11",
+    "@storybook/testing-library": "^0.2.2",
+    "@storybook/vue3": "^7.6.11",
+    "@storybook/vue3-vite": "^7.6.11",
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vue-tsc && vite build",
+    "dev": "vite --host --open",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc",
+    "lint": "eslint --ext .ts,.vue ./src"
+  },
+  "dependencies": {
+    "@monster/vue-components": "workspace:^",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "vue-loader": "^17.4.2"
+  }
+}

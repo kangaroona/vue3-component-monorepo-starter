@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ES2015",
+    "module": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "skipDefaultLibCheck": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "noEmit": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "noFallthroughCasesInSwitch": true,
+    "importHelpers": false,
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "paths": {
+      "@monster/vue-components": ["./packages/vue-components/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "build", "dist", "__unconfig_vite.config.ts"]
+}
