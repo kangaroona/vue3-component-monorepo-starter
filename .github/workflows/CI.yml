@@ -13,7 +13,9 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2
@@ -23,10 +25,18 @@ jobs:
         with:
           node-version: 18.x
           cache: pnpm
-
+      - name: Nx Cache
+        id: nx-cache
+        uses: actions/cache@v3
+        with:
+          path: .nx-cache
+          key: nx-${{ github.ref_name }}-${{ github.sha }}
+          restore-keys: |
+            nx-${{ github.ref_name }}-
+            nx-
       - name: Install Dependencies
-        run: pnpm i 
-        
+        run: pnpm i --frozen-lockfile
+
       - name: typecheck
         run: pnpm run typecheck
 
