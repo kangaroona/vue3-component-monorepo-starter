@@ -26,6 +26,9 @@
         "{projectRoot}/tsconfig.json",
         "{projectRoot}/package.json"
       ]
+    },
+    "typecheck": {
+      "dependsOn": ["^build"]
     }
   },
   "affected": {

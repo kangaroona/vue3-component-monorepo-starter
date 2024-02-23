@@ -20,13 +20,11 @@
     "dist",
     "package.json",
     "README.md",
-    "global.d.ts",
     "*.d.ts"
   ],
   "lint-staged": {
     "*.{js,ts,vue,jsx,tsx}": [
-      "pnpm typecheck",
-      "pnpm lint",
+      "eslint --fix",
       "git add"
     ]
   },
