@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build": "tsc && vue-tsc && vite build",
+    "build": "vue-tsc && vite build",
     "dev": "vite --host --open",
     "preview": "vite preview",
     "typecheck": "vue-tsc",
@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@monster/vue-components": "workspace:^",
+    "vue": "^3.4.19",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {

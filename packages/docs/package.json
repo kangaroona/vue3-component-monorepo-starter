@@ -14,7 +14,7 @@
     "@storybook/blocks": "^7.6.11",
     "@storybook/testing-library": "^0.2.2",
     "@storybook/vue3": "^7.6.11",
-    "@storybook/vue3-vite": "^7.6.11",
+    "@storybook/vue3-vite": "^7.6.11"
   },
   "keywords": [],
   "author": "",
