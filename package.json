@@ -8,7 +8,7 @@
     "docs": "pnpm  docs:dev",
     "build:docs": "pnpm -F docs run docs:build",
     "lint": "nx run-many --target=lint --parallel=3",
-    "prepare": "husky",
+    "prepare": "husky init && pnpm huskyinit",
     "huskyinit": "echo \" npx --no-install lint-staged\">.husky/pre-commit",
     "prepublishOnly": "npm run build",
     "release": "bumpp --commit --tag --push",
