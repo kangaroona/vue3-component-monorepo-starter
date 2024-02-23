@@ -27,6 +27,7 @@
       "eslint --fix"
     ]
   },
+  "packageManager": "pnpm@8.15.3",
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.23.9",
     "@babel/plugin-transform-typescript": "^7.23.6",
