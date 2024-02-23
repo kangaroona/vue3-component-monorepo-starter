@@ -24,7 +24,7 @@
     "*.d.ts"
   ],
   "lint-staged": {
-    "*.{ts,vue}": [
+    "*.{js,ts,vue,jsx,tsx}": [
       "pnpm typecheck",
       "pnpm lint",
       "git add"
