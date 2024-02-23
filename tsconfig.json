@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "target": "ES2015",
-    "module": "ESNext",
+    "module": "esnext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "skipDefaultLibCheck": true,
     "sourceMap": true,
@@ -11,6 +11,7 @@
     "strictNullChecks": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
+    "jsx": "preserve",
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "noEmit": true,
@@ -24,5 +25,5 @@
       "@monster/vue-components": ["./packages/vue-components/src/index.ts"]
     }
   },
-  "exclude": ["node_modules", "build", "dist", "__unconfig_vite.config.ts"]
+  "exclude": ["node_modules", "build", "dist"]
 }
