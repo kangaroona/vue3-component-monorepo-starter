@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "nx run-many --target=test --all",
+    "build": "nx run-many --target=build --all --exclude=@monster/vue3-component/docs",
     "dev": "nx run playground:build",
     "lint": "nx run-many --target=lint",
     "prepare": "husky install && sh ./sethusky.sh",
