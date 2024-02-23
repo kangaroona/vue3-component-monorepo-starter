@@ -5,17 +5,14 @@
   "scripts": {
     "build": "nx run-many --target=test --all",
     "dev": "nx run playground:build",
-    "docs": "pnpm  docs:dev",
-    "build:docs": "pnpm -F docs run docs:build",
-    "lint": "nx run-many --target=lint --parallel=3",
-    "prepare": "husky init && pnpm huskyinit",
-    "huskyinit": "echo \" npx --no-install lint-staged\">.husky/pre-commit",
-    "prepublishOnly": "npm run build",
+    "lint": "nx run-many --target=lint",
+    "prepare": "husky install && sh ./sethusky.sh",
+    "prepublishOnly": "pnpm run build",
     "release": "bumpp --commit --tag --push",
     "stylelint": "stylelint \"**/*.{css,less,scss,vue}\"",
-    "test": "vitest",
+    "test": "nx run-many --target=test",
     "test:ui": "vitest --ui",
-    "typecheck": "tsc && vue-tsc"
+    "typecheck": "nx run-many --target=typecheck --all"
   },
   "private": false,
   "author": "ninazhao <ninazhao0327@gmail.com>",
@@ -27,7 +24,8 @@
     "*.d.ts"
   ],
   "lint-staged": {
-    "*.ts": [
+    "*.{ts,vue}": [
+      "pnpm typecheck",
       "pnpm lint",
       "git add"
     ]
@@ -38,8 +36,8 @@
     "@babel/preset-env": "^7.23.9",
     "@babel/preset-typescript": "^7.23.3",
     "@changesets/cli": "^2.27.1",
-    "@commitlint/cli": "^18.6.0",
-    "@commitlint/config-conventional": "^18.6.0",
+    "@commitlint/cli": "^18.6.1",
+    "@commitlint/config-conventional": "^18.6.2",
     "@nx/js": "18.0.4",
     "@rollup/plugin-babel": "^6.0.4",
     "@swc/core": "^1.3.107",
@@ -67,7 +65,7 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-storybook": "^0.6.15",
     "eslint-plugin-vue": "^9.21.1",
-    "husky": "^9.0.7",
+    "husky": "^9.0.11",
     "jsdom": "^24.0.0",
     "lint-staged": "^15.2.2",
     "nx": "18.0.4",
