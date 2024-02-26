@@ -1,1 +1,52 @@
+name: Release
 
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Set node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: pnpm
+      - name: Nx Cache
+        id: nx-cache
+        uses: actions/cache@v3
+        with:
+          path: .nx-cache
+          key: nx-${{ github.ref_name }}-${{ github.sha }}
+          restore-keys: |
+            nx-${{ github.ref_name }}-
+            nx-
+      - name: Install Dependencies
+        run: pnpm i --frozen-lockfile
+
+      - name: typecheck
+        run: pnpm run typecheck
+
+      - name: Lint
+        run: pnpm run lint
+
+      - name: Build
+        run: pnpm run build
+
+      - name: deploy
+        run: pnpm run release
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

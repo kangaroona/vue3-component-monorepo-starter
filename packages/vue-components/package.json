@@ -1,14 +1,15 @@
 {
   "name": "@monster/vue-components",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
   "main": "./src/index.ts",
   "scripts": {
     "build": "vue-tsc && vite build",
     "lint": "eslint --ext .ts,.vue --fix ./src",
     "test": "vitest",
-    "typecheck": "vue-tsc"
+    "typecheck": "vue-tsc",
+    "release": "pnpm build && pnpm changeset publish"
   },
   "dependencies": {
     "vue": "^3.4.19"

@@ -2,7 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true,
+    node: true
   },
   extends: [
     'eslint:recommended',
@@ -10,17 +10,18 @@ module.exports = {
     'plugin:vue/vue3-recommended',
     'airbnb-base',
     'airbnb-typescript/base',
+    'prettier'
   ],
   overrides: [
     {
       env: {
-        node: true,
+        node: true
       },
       files: ['.eslintrc.{js,cjs}'],
       parserOptions: {
-        sourceType: 'script',
-      },
-    },
+        sourceType: 'script'
+      }
+    }
   ],
   parser: 'vue-eslint-parser',
   parserOptions: {
@@ -28,11 +29,11 @@ module.exports = {
     extraFileExtensions: ['.vue'],
     ecmaVersion: 'latest',
     parser: '@typescript-eslint/parser',
-    sourceType: 'module',
+    sourceType: 'module'
   },
-  plugins: ['@typescript-eslint', 'vue'],
+  plugins: ['@typescript-eslint', 'vue', 'prettier/recommended'],
   rules: {
     'import/prefer-default-export': 'off',
-    'vue/multi-word-component-names': 'off',
-  },
+    'vue/multi-word-component-names': 'off'
+  }
 };
