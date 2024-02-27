@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { HelloWorld } from '@monster/vue-components';
+import { HelloWorld, Msg } from '@monster/vue-components';
 
-const count = ref(0);
+const count = ref(3);
 const msg: string = 'init';
 function changeCount() {
   count.value += 1;
@@ -15,6 +15,7 @@ function changeCount() {
       <button class="mybtn" @click="changeCount">change count value 123</button>
     </div>
     <HelloWorld :msg="msg" />
+    <Msg :count="count" />
     <div style="display: flex" />
   </div>
 </template>

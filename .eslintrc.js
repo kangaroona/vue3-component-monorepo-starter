@@ -34,6 +34,7 @@ module.exports = {
   plugins: ['@typescript-eslint', 'vue', 'prettier/recommended'],
   rules: {
     'import/prefer-default-export': 'off',
-    'vue/multi-word-component-names': 'off'
+    'vue/multi-word-component-names': 'off',
+    'vue/require-prop-types': 'error'
   }
 };

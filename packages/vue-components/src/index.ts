@@ -1,4 +1,5 @@
 import HelloWorld from './components/HelloWorld.vue';
 import Button from './components/Button.vue';
+import Msg from './components/Msg.vue';
 
-export { HelloWorld, Button };
+export { HelloWorld, Button,Msg };
