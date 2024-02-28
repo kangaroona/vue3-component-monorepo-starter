@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 
@@ -23,5 +24,14 @@ export default defineConfig({
     // 为了方便学习，查看构建产物，将此置为 false，不要混淆产物代码
     minify: false
   },
-  plugins: [vue()]
+  plugins: [vue()],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    coverage: {
+      reporter: ['text', 'json', 'html'],
+      include: ['src/**'],
+      exclude: ['src/**/*.d.ts', 'src/**/*.spec.ts', 'src/**/*.test.ts']
+    }
+  }
 });

@@ -7,7 +7,8 @@
   "scripts": {
     "build": "vue-tsc && vite build",
     "lint": "eslint --ext .ts,.vue --fix ./src",
-    "test": "vitest",
+    "test": "vitest -u",
+    "coverage": "vitest run --coverage",
     "typecheck": "vue-tsc",
     "release": "pnpm build && pnpm changeset publish"
   },
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/test-utils": "^2.4.4",
     "typescript": "^5.2.2",
     "vite": "^5.1.4",
     "vue-tsc": "^1.8.27"

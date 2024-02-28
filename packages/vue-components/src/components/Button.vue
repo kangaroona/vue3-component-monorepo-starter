@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref } from 'vue';
+
 const props = withDefaults(
   defineProps<{
     text?: string;
@@ -7,13 +9,15 @@ const props = withDefaults(
     text: 'World'
   }
 );
-
+const count = ref(0);
 function clickHandler() {
-  console.log(props.text);
+  count.value += 1;
 }
 </script>
 
 <template>
+  <h1>{{ props.text }}</h1>
+  <text class="count-text">{{ count }}</text>
   <button class="openx-button" @click="clickHandler">
     <slot />
   </button>

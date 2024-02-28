@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button > mount button 1`] = `
+"<h1>text button</h1>
+<text class="count-text">0</text>
+<button class="openx-button"></button>"
+`;
