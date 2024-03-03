@@ -9,7 +9,10 @@
     "prepare": "husky install && sh ./sethusky.sh && changeset init",
     "prepublishOnly": "pnpm run build",
     "release": "bumpp --commit --tag --push",
-    "typecheck": "nx run-many --target=typecheck --all"
+    "typecheck": "nx run-many --target=typecheck --all",
+    "changeset:version": "changeset version && git add --all",
+    "changeset": "changeset",
+    "changeset:release": "pnpm changeset publish"
   },
   "private": true,
   "author": "ninazhao <ninazhao0327@gmail.com>",

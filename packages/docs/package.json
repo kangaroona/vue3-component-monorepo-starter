@@ -1,12 +1,13 @@
 {
-  "name": "@monster/vue3-component/docs",
-  "version": "1.0.0",
+  "name": "@monsterschool/vue3-component/docs",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies":{
+  "devDependencies": {
     "@storybook/addon-essentials": "^7.6.11",
     "@storybook/addon-interactions": "^7.6.11",
     "@storybook/addon-links": "^7.6.11",

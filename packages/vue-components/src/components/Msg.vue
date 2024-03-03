@@ -23,7 +23,7 @@ const res = reactive(props);
 const newCount = ref(props.count);
 function increment() {
   newCount.value += 1;
-  res.data.author = 'monster3';
+  res.data.author = 'monster33';
 }
 </script>
 
