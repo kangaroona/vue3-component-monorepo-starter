@@ -1,5 +1,11 @@
 # @monster/vue-components
 
+## 2.2.0
+
+### Minor Changes
+
+- 0be06bb: feat: update button
+
 ## 2.1.0
 
 ### Minor Changes
