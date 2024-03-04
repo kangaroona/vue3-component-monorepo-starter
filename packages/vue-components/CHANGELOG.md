@@ -1,5 +1,11 @@
 # @monster/vue-components
 
+## 2.1.0
+
+### Minor Changes
+
+- feat: main
+
 ## 2.0.0
 
 ### Major Changes

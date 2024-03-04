@@ -60,7 +60,7 @@ importers:
         specifier: ^7.0.2
         version: 7.0.2(eslint@8.56.0)(typescript@5.3.3)
       '@vitejs/plugin-vue':
-        specifier: ^5.0.3
+        specifier: ^5.0.4
         version: 5.0.4(vite@5.1.4)(vue@3.4.19)
       '@vitejs/plugin-vue-jsx':
         specifier: ^3.1.0
@@ -107,9 +107,6 @@ importers:
       eslint-config-airbnb-base:
         specifier: ^15.0.0
         version: 15.0.0(eslint-plugin-import@2.29.1)(eslint@8.56.0)
-      eslint-config-airbnb-typescript:
-        specifier: ^17.1.0
-        version: 17.1.0(@typescript-eslint/eslint-plugin@7.0.2)(@typescript-eslint/parser@7.0.2)(eslint-plugin-import@2.29.1)(eslint@8.56.0)
       eslint-config-prettier:
         specifier: ^9.1.0
         version: 9.1.0(eslint@8.56.0)
@@ -168,7 +165,7 @@ importers:
         specifier: ^5.0.12
         version: 5.1.4(@types/node@20.11.19)(sass@1.71.1)
       vite-plugin-dts:
-        specifier: ^3.7.2
+        specifier: ^3.7.3
         version: 3.7.3(@types/node@20.11.19)(typescript@5.3.3)(vite@5.1.4)
       vitest:
         specifier: ^1.3.1
@@ -206,7 +203,7 @@ importers:
 
   packages/playground:
     dependencies:
-      '@monster/vue-components':
+      '@monsterschool/vue-components':
         specifier: workspace:^
         version: link:../vue-components
       vue:
@@ -4313,7 +4310,7 @@ packages:
       ts-dedent: 2.2.0
       type-fest: 2.19.0
       vue: 3.4.19(typescript@5.3.3)
-      vue-component-type-helpers: 1.8.27
+      vue-component-type-helpers: 2.0.3
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -7487,21 +7484,6 @@ packages:
       object.assign: 4.1.5
       object.entries: 1.1.7
       semver: 6.3.1
-    dev: true
-
-  /eslint-config-airbnb-typescript@17.1.0(@typescript-eslint/eslint-plugin@7.0.2)(@typescript-eslint/parser@7.0.2)(eslint-plugin-import@2.29.1)(eslint@8.56.0):
-    resolution: {integrity: sha512-GPxI5URre6dDpJ0CtcthSZVBAfI+Uw7un5OYNVxP2EYi3H81Jw701yFP7AU+/vCE7xBtFmjge7kfhhk4+RAiig==}
-    peerDependencies:
-      '@typescript-eslint/eslint-plugin': ^5.13.0 || ^6.0.0
-      '@typescript-eslint/parser': ^5.0.0 || ^6.0.0
-      eslint: ^7.32.0 || ^8.2.0
-      eslint-plugin-import: ^2.25.3
-    dependencies:
-      '@typescript-eslint/eslint-plugin': 7.0.2(@typescript-eslint/parser@7.0.2)(eslint@8.56.0)(typescript@5.3.3)
-      '@typescript-eslint/parser': 7.0.2(eslint@8.56.0)(typescript@5.3.3)
-      eslint: 8.56.0
-      eslint-config-airbnb-base: 15.0.0(eslint-plugin-import@2.29.1)(eslint@8.56.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.0.2)(eslint@8.56.0)
     dev: true
 
   /eslint-config-prettier@9.1.0(eslint@8.56.0):
@@ -13001,6 +12983,10 @@ packages:
 
   /vue-component-type-helpers@1.8.27:
     resolution: {integrity: sha512-0vOfAtI67UjeO1G6UiX5Kd76CqaQ67wrRZiOe7UAb9Jm6GzlUr/fC7CV90XfwapJRjpCMaZFhv1V0ajWRmE9Dg==}
+    dev: true
+
+  /vue-component-type-helpers@2.0.3:
+    resolution: {integrity: sha512-dVPXmrwul+lLt2ErNqwfIGTWkZoPQjlarFx5pwXnCwdJ80ZaJ2nmqtt3KcUgVaKBwBQBpJqOlJPaMxICBay+Cg==}
     dev: true
 
   /vue-docgen-api@4.75.1(vue@3.4.19):

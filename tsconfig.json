@@ -5,6 +5,9 @@
     "module": "esnext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "skipDefaultLibCheck": true,
+    "emitDeclarationOnly": true, // 只输出声明文件(ts 产物)
+"declaration": true, // 自动生成声明文件
+"declarationDir": "dist", // 声明文件生成的目录
     "sourceMap": true,
     "allowJs": true,
     "skipLibCheck": true,
@@ -14,7 +17,7 @@
     "jsx": "preserve",
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "noEmit": true,
+    //"noEmit": true,
     "forceConsistentCasingInFileNames": true,
     "noUnusedLocals": true,
     "noFallthroughCasesInSwitch": true,
@@ -22,7 +25,7 @@
     "resolveJsonModule": true,
     "isolatedModules": false,
     "paths": {
-      "@monster/vue-components": ["./packages/vue-components/src/index.ts"]
+      "@monsterschool/vue-components": ["./packages/vue-components/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "build", "dist"]

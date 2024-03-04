@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { HelloWorld, Msg } from '@monster/vue-components';
+import { HelloWorld, Msg } from '@monsterschool/vue-components';
 
 const count = ref(3);
 const msg: string = 'init';

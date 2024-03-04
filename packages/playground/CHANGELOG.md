@@ -1,5 +1,16 @@
 # playground
 
+## 3.1.0
+
+### Minor Changes
+
+- feat: main
+
+### Patch Changes
+
+- Updated dependencies
+  - @monsterschool/vue-components@2.1.0
+
 ## 3.0.0
 
 ### Major Changes
