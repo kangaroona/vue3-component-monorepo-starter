@@ -7,7 +7,7 @@
     "build": "vue-tsc && vite build",
     "dev": "vite --host --open",
     "preview": "vite preview",
-    "typecheck": "vue-tsc --noEmit",
+    "typecheck": "vue-tsc --noEmit --emitDeclarationOnly false",
     "lint": "eslint --ext .ts,.vue ./src"
   },
   "dependencies": {
