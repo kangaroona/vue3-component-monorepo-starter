@@ -2,8 +2,8 @@
   "name": "@monsterschool/vue-components",
   "private": false,
   "version": "2.2.0",
-  "type": "module",
-  "main": "dist/monsterschool-components.js",
+  "main": "dist/lib/index.js",
+  "module":"dist/es/index.mjs",
   "typings": "dist/index.d.ts",
   "scripts": {
     "build": "vue-tsc && vite build",
@@ -12,6 +12,11 @@
     "coverage": "vitest run --coverage",
     "typecheck": "vue-tsc --noEmit --emitDeclarationOnly false"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md"
+  ],
   "dependencies": {
     "vue": "^3.4.19"
   },
