@@ -1,5 +1,12 @@
 # @monster/vue-components
 
+## 2.3.0
+
+### Minor Changes
+
+- 44a2ac4: test1
+- 44a2ac4: test
+
 ## 2.2.0
 
 ### Minor Changes

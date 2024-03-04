@@ -1,5 +1,13 @@
 # playground
 
+## 3.1.2
+
+### Patch Changes
+
+- Updated dependencies [44a2ac4]
+- Updated dependencies [44a2ac4]
+  - @monsterschool/vue-components@2.3.0
+
 ## 3.1.1
 
 ### Patch Changes
