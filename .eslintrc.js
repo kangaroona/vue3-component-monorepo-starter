@@ -9,6 +9,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-recommended',
     'airbnb-base',
+    'airbnb-typescript/base',
     'prettier'
   ],
   overrides: [
