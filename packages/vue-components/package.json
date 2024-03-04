@@ -10,7 +10,7 @@
     "lint": "eslint --ext .ts,.vue --fix ./src",
     "test": "vitest -u",
     "coverage": "vitest run --coverage",
-    "typecheck": "vue-tsc"
+    "typecheck": "vue-tsc --noEmit --emitDeclarationOnly false"
   },
   "dependencies": {
     "vue": "^3.4.19"

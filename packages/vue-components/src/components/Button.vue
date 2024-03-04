@@ -11,7 +11,7 @@ const props = withDefaults(
 );
 const count = ref(0);
 function clickHandler() {
-  count.value += 1;
+  count.value += 2;
 }
 </script>
 
