@@ -53,7 +53,7 @@ jobs:
           # 执行更新版本和发布的命令
           version: pnpm changeset:version
           publish: pnpm changeset:release
-          commit: '[ci] release'
+          commit: 'feat: release npm version'
           title: '[ci] release'
         env:
           # 这里需要几个 Token 变量
