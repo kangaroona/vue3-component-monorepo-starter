@@ -1,5 +1,12 @@
 # @monster/vue-components
 
+## 2.4.0
+
+### Minor Changes
+
+- 4a08d8e: add fetch pagenation hooks
+- 4a08d8e: add pagenation fetchhooks
+
 ## 2.3.0
 
 ### Minor Changes

@@ -1,5 +1,18 @@
 # playground
 
+## 3.2.0
+
+### Minor Changes
+
+- 4a08d8e: add fetch pagenation hooks
+- 4a08d8e: add pagenation fetchhooks
+
+### Patch Changes
+
+- Updated dependencies [4a08d8e]
+- Updated dependencies [4a08d8e]
+  - @monsterschool/vue-components@2.4.0
+
 ## 3.1.2
 
 ### Patch Changes

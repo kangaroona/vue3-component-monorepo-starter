@@ -1,13 +1,13 @@
 {
   "name": "@monsterschool/vue-components",
   "private": false,
-  "version": "2.3.0",
+  "version": "2.4.0",
   "main": "dist/lib/index.js",
   "module": "dist/es/index.mjs",
   "typings": "dist/index.d.ts",
   "scripts": {
     "build": "vue-tsc && vite build",
-    "build:w":"vite build -w",
+    "build:w": "vite build -w",
     "lint": "eslint --ext .ts,.vue --fix ./src",
     "test": "vitest -u",
     "coverage": "vitest run --coverage",
