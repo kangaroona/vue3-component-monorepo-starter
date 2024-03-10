@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { HelloWorld, Msg } from '@monsterschool/vue-components';
+import { HelloWorld, Msg,Pagenation } from '@monsterschool/vue-components';
 
 const count = ref(3);
 const msg: string = 'init';
+const startPage:number = 5;
 function changeCount() {
   count.value += 1;
 }
+console.log('reder page');
 </script>
 
 <template>
@@ -15,6 +17,7 @@ function changeCount() {
       <button class="mybtn" @click="changeCount">change count value 123</button>
     </div>
     <HelloWorld :msg="msg" />
+    <Pagenation :page="startPage" :endpoint="'https://example.com/api'"/>
     <Msg :count="count" />
     <div style="display: flex" />
   </div>

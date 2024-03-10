@@ -12,14 +12,6 @@ export default defineConfig({
     lib: {
       // 构建的入口文件
       entry: './src/index.ts',
-
-      // 产物的生成格式，默认为 ['es', 'umd']。我们使用默认值，注释掉此字段。
-      //formats: ['es', 'umd'],
-
-      // 当产物为 umd、iife 格式时，该模块暴露的全局变量名称
-      // name: 'monstercomponents',
-      // // 产物文件名称
-      // fileName: 'monsterschool-components'
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
@@ -50,7 +42,14 @@ export default defineConfig({
       ],
     },
     // 为了方便学习，查看构建产物，将此置为 false，不要混淆产物代码
-    minify: true
+    minify: "terser",
+    terserOptions: {
+      compress: {
+        //生产环境时移除console
+        drop_console: true,
+        drop_debugger: true,
+      },
+    }
   },
   plugins: [vue(), dts({ include: './src' })],
   test: {

@@ -35,6 +35,8 @@ module.exports = {
   rules: {
     'import/prefer-default-export': 'off',
     'vue/multi-word-component-names': 'off',
-    'vue/require-prop-types': 'error'
+    'vue/require-prop-types': 'error',
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-plusplus": "off"
   }
 };
